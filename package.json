@@ -1,0 +1,25 @@
+{
+  "name": "srr",
+  "version": "1.0.0",
+  "description": "Simple React Redux is made for people who want start with React and Redux.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kncs/srr.git"
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "Webpack",
+    "Boilerplate"
+  ],
+  "author": "Kevin Clarens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kncs/srr/issues"
+  },
+  "homepage": "https://github.com/kncs/srr#readme"
+}
