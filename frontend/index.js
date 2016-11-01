@@ -1,8 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import HelloWorld from './components/hello-world.react'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+
+import appReducers from './reducers'
+import CounterContainer from './containers/counter.container'
+
+let store = createStore(appReducers)
 
 ReactDOM.render((
-  <HelloWorld />
+  <Provider store={store}>
+    <CounterContainer />
+  </Provider>
 ), document.getElementById('app'))
