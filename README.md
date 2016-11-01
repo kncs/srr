@@ -11,7 +11,7 @@ Then, you launch the dev server:
 ```bash
 $ npm run dev
 ```
-Enjoy your [app](localhost:3000) !
+Enjoy your [app](http://localhost:3000) !
 
 ## Development Tools
 Workflow is built on top of  [Webpack](https://webpack.github.io/docs/) using hot module reloading and ES6 transpilation. Feel free to play with it :
@@ -31,6 +31,3 @@ The frontend achitecture is higly inspired from redux tutorials:
 + constants: just a folder with constants and particulary actionTypes
 + containers (Container Components): They prepare data to be passed to presentationnal components.
 + reducers: specify how the application's state changes in response
-
-
-
