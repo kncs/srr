@@ -29,7 +29,7 @@ appEntryPoint.push('./frontend/index.js')
 
 webpackConfig.entry = {
   app: appEntryPoint,
-  vendor: ['react', 'react-dom'],
+  vendor: ['react', 'react-dom', 'react-redux', 'redux'],
 }
 
 
