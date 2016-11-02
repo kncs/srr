@@ -31,3 +31,13 @@ The frontend achitecture is higly inspired from redux tutorials:
 + constants: just a folder with constants and particulary actionTypes
 + containers (Container Components): They prepare data to be passed to presentationnal components.
 + reducers: specify how the application's state changes in response
+
+## Tests
+[Jest](https://facebook.github.io/jest/) is used for testing the frontend app. You can run once tests using the command :
+```bash
+$ npm run test
+```
+or test on every file change using the command :
+```bash
+$ npm run test:watch
+```
