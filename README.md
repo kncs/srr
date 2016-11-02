@@ -20,6 +20,8 @@ $ npm run dev
 ```
  Then, work on your frontend app and it will magically update changes on your browser.
 
+ For a better expreience, install [Redux DevTools Extension](http://zalmoxisus.github.io/redux-devtools-extension/index.html).
+
 ## Backend
 Backend is based on [Express](http://expressjs.com/) web framework. It's a minimal server that will allow you to only serve your app.
 

@@ -7,7 +7,7 @@ import { createStore } from 'redux'
 import appReducers from './reducers'
 import CounterContainer from './containers/counter.container'
 
-let store = createStore(appReducers)
+let store = createStore(appReducers,  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render((
   <Provider store={store}>
