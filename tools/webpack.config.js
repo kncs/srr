@@ -12,8 +12,7 @@ var webpackConfig = {
   context: path.join(__dirname, '../'),
   module: {},
   resolve: {
-    root: path.resolve(__dirname),
-    extensions: ['', '.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json'],
   },
 }
 
@@ -58,7 +57,7 @@ plugins.push(
       'NODE_ENV': __PROD__ ? JSON.stringify('production') : JSON.stringify('development')
     }
   }),
-  new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')
+  new webpack.optimize.CommonsChunkPlugin({ name: 'vendor', filename: 'vendor.bundle.js' })
 )
 
 if (__DEV__) {
@@ -90,7 +89,7 @@ var loaders = webpackConfig.module.loaders = []
 loaders.push({
   test: /\.js$/,
   exclude: /node_modules/,
-  loaders: ['babel']
+  loaders: ['babel-loader']
 }, {
   test: /\.json$/,
   loader: 'json'
